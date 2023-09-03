@@ -168,8 +168,8 @@ canvas {
 }
 
 .viewport {
-  overflow-x: auto;
-  overflow-y: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
   height: 100dvh;
 }
 .viewport::-webkit-scrollbar {
@@ -180,7 +180,7 @@ canvas {
   background-color: oklch(22% 0 0/1);
 }
 .viewport::-webkit-scrollbar-thumb {
-  background-color: oklch(80% 0.135 0/1);
+  background-color: oklch(60% 0 0/1);
 }
 
 .container {
@@ -260,13 +260,12 @@ canvas {
 }
 
 .table {
-  overflow-x: scroll;
+  overflow-x: auto;
   width: -moz-fit-content;
   width: fit-content;
   max-width: 100%;
   padding: 2rem;
   background-color: oklch(17% 0 0/1);
-  border-radius: 0.5rem;
 }
 @media (width < 60rem) {
   .table {
@@ -281,5 +280,5 @@ canvas {
   background-color: oklch(22% 0 0/1);
 }
 .table::-webkit-scrollbar-thumb {
-  background-color: oklch(80% 0.135 0/1);
+  background-color: oklch(60% 0 0/1);
 }

@@ -13,7 +13,7 @@
     }
 
     &-thumb {
-      background-color: color.get-color-from-role('primary');
+      background-color: color.get-color-from-role('outline');
     }
   }
 }
@@ -112,8 +112,8 @@ canvas {
 .viewport {
   @include scrollbar;
 
-  overflow-x: auto;
-  overflow-y: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
   height: 100dvh;
 }
 
@@ -180,12 +180,11 @@ canvas {
 
   @include scrollbar;
 
-  overflow-x: scroll;
+  overflow-x: auto;
 
   width: fit-content;
   max-width: 100%;
   padding: 2rem;
 
   background-color: color.get-color-from-role('surface-container-high');
-  border-radius: 0.5rem;
 }
