@@ -101,6 +101,14 @@ li + li {
   margin-top: 0.5em;
 }
 
+dt {
+  font-weight: 700;
+}
+
+dd + dt {
+  margin-top: 0.5em;
+}
+
 img,
 video,
 svg,
@@ -160,7 +168,7 @@ canvas {
   }
 
   .header {
-    font-weight: 500;
+    font-weight: 700;
   }
 
   .number::before {
